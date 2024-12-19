@@ -1,0 +1,11 @@
+[package]
+name = "tls_termination_example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rama = { version ="0.2.0-alpha.3", features = ["full"]}
+tokio = { version = "1.42", features = ["full"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"]}
+rama-net ={version = "0.2.0-alpha.3", features = ["tls"] }
